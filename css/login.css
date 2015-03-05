@@ -1,0 +1,68 @@
+body.login {
+	background: url(../images/bg-small.png) top center
+}
+
+body.login div#login {
+	padding: 4px 0 0;
+}
+
+body.login div#login h1 a {
+	height: 185px;
+	margin: 0 auto;
+	padding-top: 20px;
+	position: relative;
+	left: 13px;
+	top: 13px;
+}
+
+body.login div#login h1 {
+	display: block;
+	width: 100%;
+	background: url(../images/header.png) bottom center no-repeat;
+}
+
+body.login div#login {
+	width: 100%;
+}
+
+body.login form {
+	width: 262px;
+	margin: 0 auto;
+	box-shadow: 2px 2px 14px rgba(0,0,0,.45);
+	-webkit-box-shadow: 2px 2px 14px rgba(0,0,0,.45);
+	-moz-box-shadow: 2px 2px 14px rgba(0,0,0,.45);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+body.login p.custom-message {
+	width: 288px;
+	margin: 0 auto;
+	background-color: #ffffe0;
+	border-color: #e6db55;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	text-align: justify;
+}
+
+body.login .message {
+	width: 286px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+body.login p#nav, body.login p#backtoblog {
+	margin: 0 auto;
+	width: 272px;
+}
+
+body.login div#login_error {
+	width: 286px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}

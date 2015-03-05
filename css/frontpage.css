@@ -1,0 +1,194 @@
+/* FRONT PAGE */
+#main { width: 699px; border-left: 1px solid #c0c0c0; padding-bottom: 20px;}
+#widgets {
+  /*box-shadow: inset -40px 0px 40px -40px rgba(0,0,0,.45);
+    -webkit-box-shadow: inset -40px 0px 40px -40px rgba(0,0,0,.45);
+      -moz-box-shadow: inset -40px 0px 40px -40px rgba(0,0,0,.45);*/
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+#widgets h2 {
+  display: block;
+  margin: 0;
+  padding: 5px;
+  height: 30px;
+  vertical-align: middle;
+  z-index: 999;
+  overflow: visible;
+  line-height: 27px;
+  padding-left: 10px;
+}
+#widgets li:first-child h2 {
+	border-top: none;
+}
+#widgets li li {
+	background: #F2F2F2;
+	border-bottom: 2px groove #fff;
+	z-index: -999;
+}
+#widgets .widget ul.menu li:first-child {box-shadow: inset 0 15px 6px -15px rgba(0,0,0,.45)}
+#widgets .widget ul.menu li:last-child {
+	border-bottom: none !important;
+	box-shadow: inset 0 -15px 6px -15px rgba(0,0,0,.45)
+}
+#widgets li ul {
+	margin: 0;
+}
+#widgets li.widget {
+	margin: 0;
+}
+
+#widgets .menu-item a {
+	font-family: Trebuchet, Tahoma, Arial, sans-serif;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	padding-left: 15px;
+	width: 100%;
+	-webkit-transition: all 0.1s ease-in;  
+}
+
+#widgets .menu-item a:hover {
+	color: green;
+}
+
+
+#page {
+  background: white;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 2px 2px 14px rgba(0,0,0,.45);
+     -moz-box-shadow: 2px 2px 14px rgba(0,0,0,.45);
+          box-shadow: 2px 2px 14px rgba(0,0,0,.45);
+}
+#front-content {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 0;
+}
+#front-content .post-content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+#frontpage-ticker {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+#frontpage-ticker div {
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 10px
+}
+
+#news-ticker {
+  font-size: 14px;
+}
+
+#frontpage-featured article {
+  width: 220px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  float: left;
+  height: 150px;
+  padding: 0;
+  overflow: visible;
+  -webkit-perspective: 950;
+}
+#frontpage-featured article h1 {
+	text-align: center;
+	display: block;
+	width: 220px;
+	position: absolute;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(0,0,0,.5);
+  padding: 5px 0;
+}
+
+#frontpage-featured .post-content {
+  font-size: 12px;
+  border: none;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#frontpage-featured article:hover .front {
+  -webkit-transform: rotateX(180deg);
+}
+
+#frontpage-featured article:hover .back {
+  z-index: 1000; -webkit-transform: rotateX(0deg);
+}
+
+#frontpage-featured article .front {
+  height: 150px;
+  z-index: 900;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: rotateX(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  -webkit-box-shadow: 0px 1px 10px rgba(0,0,0,.4);
+     -moz-box-shadow: 0px 1px 10px rgba(0,0,0,.4);
+          box-shadow: 0px 1px 10px rgba(0,0,0,.4);
+}
+
+#frontpage-featured article .back {
+  height: 150px;
+  width: 220px;
+  position: absolute; top: 0; left: 0 !important;
+  text-align: center;
+  background: #fff;
+  z-index: 800;
+  -webkit-transform: rotateX(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -webkit-box-shadow: 0px 1px 10px rgba(0,0,0,.4);
+     -moz-box-shadow: 0px 1px 10px rgba(0,0,0,.4);
+          box-shadow: 0px 1px 10px rgba(0,0,0,.4);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 660px) {
+  #frontpage-featured article {
+    width: 100%;
+    margin-left: 0px !important;
+    height: auto;
+  }
+
+  #frontpage-featured article h1 { width: 100% }
+  #frontpage-featured article:hover .front { -webkit-transform: none }
+  #frontpage-featured article:hover .back { -webkit-transform: none }
+
+  #frontpage-featured article .front {
+    height: auto;
+    width: 100%;
+    background: none !important;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+  #frontpage-featured article .back {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    background: none;
+    -webkit-transform: rotateX(0deg);
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+}
